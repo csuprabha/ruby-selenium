@@ -1,0 +1,5 @@
+source 'https://rubygems.org'
+
+gem 'selenium-webdriver'
+gem 'geckodriver-helper'
+gem 'page-object'
