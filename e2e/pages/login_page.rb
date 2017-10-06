@@ -1,6 +1,4 @@
 require "selenium-webdriver"
-# require "page-object"
-require_relative "home_page"
 
 class LoginPage
 

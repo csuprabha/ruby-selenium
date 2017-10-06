@@ -2,8 +2,8 @@ require "selenium-webdriver"
 require_relative "../pages/login_page"
 require_relative "../pages/property_page"
 require_relative "../pages/setup_page"
-require_relative "../pages/reservation_page"
 require_relative "../pages/create_reservation_page"
+
 
 @driver = Selenium::WebDriver.for :firefox
 
@@ -19,12 +19,9 @@ require_relative "../pages/create_reservation_page"
 	@browser = SetupPage.new(@driver)  
 	@browser.select_reservation_tab
 
-    # Create Property is called
-	@browser = ReservationPage.new(@driver)  
-	#@browser.create_reservation
-
-    # create new reservation
+    # checkin reservation
 	@browser = ReservationModal.new(@driver)
-	@browser.reservation_edit
+	@browser.reservation_checkin
+
 
      
