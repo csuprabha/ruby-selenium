@@ -8,8 +8,8 @@ require_relative "../pages/create_reservation_page"
 @driver = Selenium::WebDriver.for :firefox
 
 	# login into the app 
-	@browser = LoginPage.new(@driver, "http://apac-stg.littlehotelier.com")
-	@browser.login("suprabha.chaudhary@siteminder.com","Delhi123")
+	@browser = LoginPage.new(@driver, "")
+	@browser.login("")
 
     # Select a property
 	@browser = PropertyPage.new(@driver)  
